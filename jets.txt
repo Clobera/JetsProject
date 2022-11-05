@@ -4,9 +4,5 @@ Bomber,E-3 Sentry,855,7400,270000000
 Bomber,B-52,1046,14162,300000000
 Cargo,C-17,950,4480,340000000
 Cargo,C130,590,3800,14000000
-passenger,
-
-
-
-
-NO SPACES AFTER COMMAS!!!!!
+Passenger,Boeing 777-300,speed,11135,279000000
+Passenger,Beechcraft King Air 350i,578,3345,6500000

@@ -42,15 +42,14 @@ public abstract class Jet {
 		this.price = price;
 	}
 	
-//	public void fly() {
-//		System.out.println("Flying!");
-//	}
-//	
-//	OR
-//	
-//	public abstract void fly();
-//	
+	public void fly() {
+		System.out.println("Flying!"); // do 
+	}
 	
+	@Override
+	public String toString() {
+		return "Jet [Model: " + model + ", Speed: " + speed + ", Range: " + range + ", Price: " + price + "]";
+	}
 	
 	
 }

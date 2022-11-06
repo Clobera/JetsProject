@@ -52,7 +52,12 @@ public class AirField {
 
 	public void flyJets() {
 		for (int i = 0; i < fleet.size(); i++) {
-			fleet.get(i).fly();
+			if (fleet.get(i) instanceof Jet) {
+				System.out.println((Jet) fleet.get(i));
+				System.out.println(fleet.get(i).distance());
+				fleet.get(i).fly();
+				System.out.println();
+			}
 		}
 
 	}
@@ -103,69 +108,43 @@ public class AirField {
 		}
 		System.out.println("The jet with the longest Range is: " + longestRangeJet);
 	}
-	
+
 	public void addJet(String catagory, String model, double speed, int range, long price) {
-		
-		if(catagory.equalsIgnoreCase("Cargo")) {
+
+		if (catagory.equalsIgnoreCase("Cargo")) {
 			fleet.add(new Cargo(model, speed, range, price));
-			
-		}else if(catagory.equalsIgnoreCase("Strategic")) {
+
+		} else if (catagory.equalsIgnoreCase("Strategic")) {
 			fleet.add(new Strategic(model, speed, range, price));
-			
-		}else if(catagory.equalsIgnoreCase("Bomber")) {
+
+		} else if (catagory.equalsIgnoreCase("Bomber")) {
 			fleet.add(new Reconnaissance(model, speed, range, price));
-			
-		}else if(catagory.equalsIgnoreCase("Commercial")) {
+
+		} else if (catagory.equalsIgnoreCase("Commercial")) {
 			fleet.add(new Commercial(model, speed, range, price));
-			
-		}else if(catagory.equalsIgnoreCase("JetImpl")) {
+
+		} else if (catagory.equalsIgnoreCase("JetImpl")) {
 			fleet.add(new JetImpl(model, speed, range, price));
-		
+
 		}
-		
+
 	}
 
-	
 	public void removeJetMenu() {
 		for (int i = 0; i < fleet.size(); i++) {
 			System.out.println(i + ".) " + fleet.get(i).toString());
 		}
-//		fleet.add(new JetImpl(model, speed, range, price));
-		
+
 	}
-	///confuseddddddd
+
 	public void removeJet(int choice) {
 		for (int i = 0; i < fleet.size(); i++) {
 			if (fleet.get(choice) == fleet.get(i)) {
 				fleet.remove(i);
-			}else {
-				System.out.println("Please pick number from the menu!");
 			}
-			
+
 		}
-		
-			
-		
-	
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

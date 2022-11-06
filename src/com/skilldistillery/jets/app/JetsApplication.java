@@ -3,13 +3,11 @@ package com.skilldistillery.jets.app;
 import java.util.Scanner;
 
 import com.skilldistillery.jets.entities.AirField;
-import com.skilldistillery.jets.entities.JetImpl;
 
 public class JetsApplication {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		JetsApplication ja = new JetsApplication();
 		boolean keepGoing = true;
 		AirField af = new AirField();
 
@@ -35,7 +33,7 @@ public class JetsApplication {
 				af.listFleet();
 
 			} else if (menuChoice == 2) {
-				af.flyJets();
+				af.flyJets(); // STILL NEED TO DO STUFF LOOK AT STRUCTURE
 
 			} else if (menuChoice == 3) {
 				af.fastestJet();
@@ -72,7 +70,7 @@ public class JetsApplication {
 				af.removeJetMenu();
 				System.out.println("Enter number of jet you want to remove!(ONLY NUMBER): ");
 				int choice = sc.nextInt();
-				sc.next();
+				sc.nextLine();
 				af.removeJet(choice);
 				System.out.println("You've removed a jet!");
 
@@ -84,10 +82,8 @@ public class JetsApplication {
 				System.out.println("Invalid choice. Enter a number from the menu!");
 			}
 
-			// use the food truck for the menu part !!
-
 		}
-
+		sc.close();
 	} // end main method
 
 }

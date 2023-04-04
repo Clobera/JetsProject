@@ -1,24 +1,29 @@
 # Jets program
 
-### Description
-In this jets program we are tasked with creating a text file of different jets with models, range, speed, and price. We then read the file and turn its contents into an object that we will store in an Array List in the AirField file. Next, then prompt the user with a menu of different actions they can choose from (ex. list jets in fleet, fly all planes, add and remove jets, and more!). Finally, when the user chooses to exit the program they enter the option in the menue and they will be left with a message before the program ends.
+## Description
+This Jets program allows the user to manage a fleet of jets by creating a text file that contains information on each jet, including model, range, speed, and price. The program then reads the file and converts the data into an ArrayList in the AirField class. The user is then prompted with a menu of different actions they can choose from, such as listing the jets in the fleet, flying all planes, and adding or removing jets. Finally, when the user chooses to exit the program, they will receive a message before the program ends.
 
-### Tech used
-<li> Encapsulation
-<li> Polymorphism
-<li> Array Lists
-<li> If, Else if, Else statements
-<li> Constructors
-<li> Interfaces
-<li> Abstract Objects
-<li> Buffer reader & File reader
-<li> for loops and while loops
-<li> Wrapper classes
+## Tech used
+- Encapsulation
+- Polymorphism
+- Abstract Objects
+- Interfaces
+- ArrayLists
+- if, else if, and else statements
+- Constructors
+- BufferedReader and FileReader
+- For loops and while loops
+- Wrapper classes
 
 
+## Learning Outcomes
 
-### Lessons learned
-<li>  I learned that making methods for different tasks makes your code cleaner and is easier to work with when troubleshooting. 
-<li> Another lesson i learned was to work with fields that are private by using methods.
-<li> i also learned how to search for answers i didn't know!
+During the development of this project, I gained experience with:
+
+- Applying object-oriented programming principles in Java, including encapsulation, polymorphism, and abstract objects
+- Implementing interfaces to define and implement common behavior across multiple classes
+- Working with input/output in Java, including reading from and writing to files using FileReader and BufferedReader
+- Using methods to organize code and accomplish specific tasks, and passing arguments to methods to provide them with necessary data
+
+
 

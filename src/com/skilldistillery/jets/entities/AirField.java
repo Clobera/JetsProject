@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class AirField {
-//no main
 
 	private ArrayList<Jet> fleet = new ArrayList<>();
 
@@ -39,16 +38,18 @@ public class AirField {
 		}
 
 	}
-
-	public int fleetSize() {
-		return this.fleet.size();
-	}
-
+	
+	
 	public void listFleet() {
 		for (int i = 0; i < fleet.size(); i++) {
 			System.out.println(fleet.get(i).toString());
 		}
 	}
+
+	public int fleetSize() {
+		return fleet.size();
+	}
+
 
 	public void flyJets() {
 		for (int i = 0; i < fleet.size(); i++) {
